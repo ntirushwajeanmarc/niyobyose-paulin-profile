@@ -1,0 +1,17 @@
+{
+  "name": "niyobyose-paulin-profile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal profile website for Niyobyose Paulin — software engineer.",
+  "scripts": {
+    "start": "npx --yes serve -l 4173 .",
+    "dev": "npx --yes serve -l 4173 ."
+  },
+  "keywords": [
+    "portfolio",
+    "profile",
+    "software-engineer"
+  ],
+  "author": "Niyobyose Paulin",
+  "license": "UNLICENSED"
+}

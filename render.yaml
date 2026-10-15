@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: niyobyose-paulin-profile
+    runtime: static
+    plan: free
+    buildCommand: ""
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /images/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
