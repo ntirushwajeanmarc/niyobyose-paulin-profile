@@ -12,12 +12,14 @@ photo embedded in page 1 of the PDF (`public/images/profile.png`, copied into
 ## Structure
 
 ```
-index.html      single page, all sections
-styles.css      design system (dark navy + cyan, responsive, print styles)
-script.js       mobile menu, scroll reveal, counters, anchor offset
-render.yaml     Render Blueprint (static site)
-images/         portrait
+index.html          single page, all sections
+styles.css          design system (dark navy + cyan, responsive, print styles)
+script.js           mobile menu, scroll reveal, counters, anchor offset
+Niyobyose-Paulin-CV.pdf   the downloadable CV (copy of the source PDF)
+render.yaml         Render Blueprint (static site)
+images/            portrait
 robots.txt
+sitemap.xml
 ```
 
 No build step and no dependencies — it is plain HTML, CSS and JS.
@@ -38,6 +40,13 @@ Blueprint (recommended): push this folder to a Git repository, then in Render ch
 
 Manual: **New → Static Site**, connect the repo, set **Publish directory** to `.`
 and leave the build command empty.
+
+## The downloadable CV
+
+The hero button, the nav button, the first contact card and the footer link all point at
+`Niyobyose-Paulin-CV.pdf`, served from the site root with the `download` attribute so the
+browser saves it rather than opening it in a tab. To publish an updated CV, replace that
+file — keep the same filename so the links keep working.
 
 ## Editing
 
